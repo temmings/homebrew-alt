@@ -11,6 +11,7 @@ class Mfiler3 < Formula
 
   depends_on 'oniguruma'
   depends_on 'saphire'
+  depends_on 'pidof'
   depends_on 'cmigemo' if migemo?
 
   def options
