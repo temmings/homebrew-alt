@@ -11,13 +11,7 @@ class Saphire < Formula
 
   depends_on 'readline'
   depends_on 'oniguruma'
-  depends_on 'cmigemo' if migemo?
-
-  def options
-    [
-      ['--with-migemo', "Enable C/migemo support"],
-    ]
-  end
+  depends_on 'cmigemo' => :optional
 
   def install
     readline = Formula.factory('readline').prefix
@@ -27,7 +21,7 @@ class Saphire < Formula
       "--with-onig-dir=#{HOMEBREW_PREFIX}"
     ]
 
-    if migemo?
+    if build.with? "cmigemo"
       args << "--with-migemo"
       args << "--with-migemo-dir=#{HOMEBREW_PREFIX}"
     end
