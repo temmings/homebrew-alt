@@ -1,4 +1,4 @@
-cask :v1 => 'gpsfish' do
+cask 'gpsfish' do
   version '20130831.1.0'
   sha256 '71439cd4767a69a4ea18c81204f4acee4ff7613d3f452661472b0dbc6f86c23e'
 
