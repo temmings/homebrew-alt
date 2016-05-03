@@ -7,7 +7,7 @@ end
 class Saphire < Formula
   homepage 'http://sourceforge.jp/projects/sash/'
   url 'http://dl.sourceforge.jp/sash/54458/saphire-3.6.5.tgz'
-  md5 '0c2c595c6ba616ded997bdbfb68e5e1c'
+  sha256 '5dcd0ea3828a375004be7545a76b319713c6a17dcbc34189fb044ce63279d087'
 
   depends_on 'readline'
   depends_on 'oniguruma'

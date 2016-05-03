@@ -3,7 +3,7 @@ require 'formula'
 class Mfiler3 < Formula
   homepage 'http://sourceforge.jp/projects/mfiler3/'
   url 'http://dl.sourceforge.jp/mfiler3/54457/mfiler3-4.4.9.tgz'
-  md5 '3f4942565b260e898d7ea60fb9474f95'
+  sha256 'f12a31f8fc1e7a35e100ad818087158194d5740b2e03787bf8bea646a758c1f2'
 
   depends_on 'oniguruma'
   depends_on 'saphire'
